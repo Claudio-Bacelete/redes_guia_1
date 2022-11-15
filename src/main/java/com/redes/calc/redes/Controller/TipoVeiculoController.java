@@ -24,7 +24,7 @@ public class TipoVeiculoController {
     @Autowired
     TipoVeiculoService service;
 
-    @ApiOperation(value = "Listar todos os tipos de Veículo")
+    @ApiOperation(value = "Listar todos os tipos de Veículo com Fatores de Multiplicação")
     @GetMapping()
     public List<TipoVeiculo> findAllTipoVeiculos() {
         return service.getAllTipoVeiculos();
