@@ -3,7 +3,6 @@ package com.redes.calc.redes.Controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,10 +22,7 @@ import io.swagger.annotations.ApiOperation;
 public class VeiculoController {
 
     @Autowired
-    private VeiculoService service;
-
-    @Autowired
-    private PasswordEncoder encoder;
+    VeiculoService service;
 
     @PostMapping
     @ApiOperation(value = "Adicionar valores de Veículo")
